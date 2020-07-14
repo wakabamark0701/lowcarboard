@@ -1,0 +1,61 @@
+// 全体//////////////////////////////////////////////
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+
+}
+
+// Side///////////////////////////////////////////////
+
+.Side{
+  width: 350px;
+  background-color: cadetblue;
+  height: 100vh; 
+}
+
+.Side-header{
+  height: 200px;
+  background-color: chartreuse;
+}
+
+.Side-foodsearch{
+  height: 200px;
+  background-color: darkmagenta;
+}
+
+.Side-foodindex{
+  height: calc(100% - 400px);
+  background-color: white;
+}
+// Main//////////////////////////////////////////////////
+
+.Main{
+  width: calc(100vw - 350px);
+  background-color: burlywood;
+  height: 100vh;
+}
+
+.Main-header{
+  height: 100px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  &__title{
+    font-size: 50px;
+    font-style: oblique;
+  }
+  &__menu{
+    
+  }
+
+}
+
+.Main-index{
+  height: calc(100% - 100px);
+  background-color: silver;
+}
