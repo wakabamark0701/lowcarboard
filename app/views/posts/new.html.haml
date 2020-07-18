@@ -1,0 +1,47 @@
+.contents.row
+  .container
+    = form_with(model: @post, local: true) do |form|
+      %h3 投稿する
+      .contents-input
+        .contents-input__foods
+          = form.text_field :foodname1, placeholder: "食物入力"
+          = form.text_field :foodname2, placeholder: "食物入力"
+          = form.text_field :foodname3, placeholder: "食物入力"
+          = form.text_field :foodname4, placeholder: "食物入力"
+          = form.text_field :foodname5, placeholder: "食物入力"
+        .contents-input__carbs
+          = form.text_field :carb1, placeholder: "糖質g "
+          = form.text_field :carb2, placeholder: "糖質g "
+          = form.text_field :carb3, placeholder: "糖質g "
+          = form.text_field :carb4, placeholder: "糖質g "
+          = form.text_field :carb5, placeholder: "糖質g "
+        .contents-input__gram
+          = form.text_field :gram1, placeholder: "摂取量"
+          = form.text_field :gram2, placeholder: "摂取量"
+          = form.text_field :gram3, placeholder: "摂取量"
+          = form.text_field :gram4, placeholder: "摂取量"
+          = form.text_field :gram5, placeholder: "摂取量"
+        .contents-input__total
+          = form.text_field :total, placeholder: "糖質合計"  
+
+        -# .contents-input__gram
+        -#   = form.text_field :user_id, placeholder: "ユーザID仮"  
+
+
+      .contents-radiobtn
+        = form.radio_button :time, :"朝食"
+        = form.label :朝食, "朝食" 
+        = form.radio_button :time, :"昼食"
+        = form.label :昼食k, "昼食" 
+        = form.radio_button :time, :"夕食"
+        = form.label :夕食, "夕食" 
+        = form.radio_button :time, :"間食"
+        = form.label :間食, "間食" 
+
+
+        
+      .contents-memo
+        = form.text_area :memo, placeholder: "memo", :size => "70x10" 
+
+      .contents-send
+        = form.submit "SEND"

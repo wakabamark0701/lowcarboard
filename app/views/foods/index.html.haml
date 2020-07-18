@@ -1,0 +1,38 @@
+.Food
+  .Food-dbpost
+    食品登録
+    = form_with(model: @food, local: true) do |form|
+      .Food-dbpost__fd
+        .Food-dbpost__food
+          = form.text_field :name, placeholder: "新規食品(店名)入力",:size => "30*30"
+        .Food-dbpost__carb
+          = form.text_field :carb, placeholder: "糖質g",:size => "10*10"  
+        .Food-dbpost__send
+          = form.submit "SEND"  
+
+
+
+
+  .Food-search
+    食品検索
+    = form_with(url:search_foods_path, local: true, method: :get) do |form|
+      = form.text_field :keyword, placeholder: "食品を検索する", class: "Food-searchinput"
+      = form.submit "検索", class: "Food-searchbtn"
+  
+      
+
+
+  .Food-db
+    食品名一覧(100g または 一品　あたりの糖質量)
+    %table{:border => "2"}
+      %tr
+        %th 食品名
+        %th 糖質量（g）
+  
+      -@foods.each do |food|
+        .Food-db__fd
+          %tr
+            %td.Food-db__name
+              =food.name
+            %td.Food-db__carb  
+              =food.carb

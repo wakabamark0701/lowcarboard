@@ -1,0 +1,20 @@
+.Food-search
+  食品検索
+  = form_with(url:search_foods_path, local: true) do |form|
+    = form.text_field :keyword, placeholder: "食品を検索する", class: "Food-searchinput"
+    = form.submit "検索", class: "Food-searchbtn"
+.Food-db 
+  食品名一覧(100g または 一品　あたりの糖質量)
+  %table{:border => "2"}
+    %tr
+      %th 食品名
+      %th 糖質量（g）
+
+    -@foods.each do |food|
+      .Food-db__fd
+        %tr
+          %td.Food-db__name
+            =food.name
+          %td.Food-db__carb  
+            =food.carb
+     

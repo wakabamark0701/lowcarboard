@@ -1,0 +1,46 @@
+.contents.row{
+
+}
+.container{
+
+}
+
+.contents-input{
+  display: flex;
+  font-size: 20px;
+
+  
+  &__foods{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+
+
+  }
+  &__carbs{
+    display: flex;
+    flex-direction: column;
+    width:100px;
+
+  }
+  &__gram{
+
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+
+  }
+
+}
+.contents-radiobtn{
+  font-size: 30px;
+
+}
+.contents-memo{
+  width: 1000px;
+
+}
+.contents-send{
+  font-size: 30px;
+
+}

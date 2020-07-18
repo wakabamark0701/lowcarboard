@@ -4,36 +4,35 @@
 }
 
 .wrapper {
-  display: flex;
 
 }
 
 // Side///////////////////////////////////////////////
 
-.Side{
-  width: 350px;
-  background-color: cadetblue;
-  height: 100vh; 
-}
+// .Side{
+//   width: 350px;
+//   background-color: cadetblue;
+//   height: 100vh; 
+// }
 
-.Side-header{
-  height: 200px;
-  background-color: chartreuse;
-}
+// .Side-header{
+//   height: 200px;
+//   background-color: chartreuse;
+// }
 
-.Side-foodsearch{
-  height: 200px;
-  background-color: darkmagenta;
-}
+// .Side-foodsearch{
+//   height: 200px;
+//   background-color: darkmagenta;
+// }
 
-.Side-foodindex{
-  height: calc(100% - 400px);
-  background-color: white;
-}
+// .Side-foodindex{
+//   height: calc(100% - 400px);
+//   background-color: white;
+// }
 // Main//////////////////////////////////////////////////
 
 .Main{
-  width: calc(100vw - 350px);
+  width:100vw;
   background-color: burlywood;
   height: 100vh;
 }
@@ -53,9 +52,43 @@
     
   }
 
+
 }
 
 .Main-index{
   height: calc(100% - 100px);
-  background-color: silver;
+  background-color: silver;  
+}
+
+.Main-index-post{
+  height: 300px;
+  width: 95%;
+  background-color: skyblue;
+  margin: 20px;
+  padding: 10px;
+
+  
+  &__daytime{
+
+  }
+  &__foodcarb{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height:60%;
+
+  }
+  &__food{
+
+  }
+  &__carb{
+
+  }
+  &__totalcarb{
+    font-size: 30px;
+  }
+  &__name{
+    font-size: 50px;
+
+  }
 }
