@@ -1,0 +1,65 @@
+.Food{
+  height: 100vh;
+  width: 100vw;
+  background-image: url("haikei1.jpg");
+  padding: 10px 30px 0 30px;
+
+
+}
+.Food-dbpost{
+  height: 120px;
+  border-bottom: dashed grey;
+  font-size: 20px;
+  margin: 20px;
+
+
+  &__fd{
+    display: flex;
+  }
+  &__food{
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  &__carb{
+    font-size: 20px;
+    margin: 20px;
+  }
+  &__send{
+    font-size: 20px;
+    margin: 20px;
+  }
+  
+  
+}
+.Food-dbbacktop{
+  margin: 0 0 0 100px;
+
+}
+
+.Food-search{
+  height: 100px;
+  font-size: 20px;
+  margin: 20px;
+  border-bottom: dashed grey;
+  position:sticky; /* 要素をスクロールに応じて固定 */
+
+}
+
+.Food-db{
+  font-size: 20px;
+  margin: 20px;
+  overflow: scroll;
+  &__fd{
+
+
+  }
+  &__name{
+    width: 80%;
+
+  }
+  &__carb{
+    text-align: center;
+    
+  }
+
+}

@@ -1,0 +1,108 @@
+.contents.row{
+  background-image: url("haikei1.jpg");
+  height:100vh;
+  padding: 30px 0 0 70px;
+
+
+}
+.container{
+  font-size: 30px;
+
+}
+
+.contents-input{
+  display: flex;
+  font-size: 20px;
+
+  
+  &__foods{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+
+
+  }
+  &__carbs{
+    display: flex;
+    flex-direction: column;
+    width:100px;
+
+  }
+  &__gram{
+
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+
+  }
+  #post_foodname1{
+    margin: 10px;
+
+  }
+  #post_foodname2{
+    margin: 10px;
+
+  }
+  #post_foodname3{
+    margin: 10px;
+
+  }
+  #post_foodname4{
+    margin: 10px;
+
+  }
+  #post_foodname5{
+    margin: 10px;
+
+  }
+
+  #post_carb1{
+    margin: 10px;
+  }
+  #post_carb2{
+    margin: 10px;
+  }
+  #post_carb3{
+    margin: 10px;
+  }
+  #post_carb4{
+    margin: 10px;
+  }
+  #post_carb5{
+    margin: 10px;
+  }
+
+  #post_gram1{
+    margin: 10px;
+  }
+  #post_gram2{
+    margin: 10px;
+  }
+  #post_gram3{
+    margin: 10px;
+  }
+  #post_gram4{
+    margin: 10px;
+  }
+  #post_gram5{
+    margin: 10px;
+  }
+
+  #post_total{
+    margin: 230px 10px 10px 10px;
+  }
+
+
+}
+.contents-radiobtn{
+  font-size: 30px;
+
+}
+.contents-memo{
+  width: 1000px;
+
+}
+.contents-send{
+  font-size: 30px;
+
+}
