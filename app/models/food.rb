@@ -1,6 +1,9 @@
 class Food < ApplicationRecord
   validates :name, presence: true
 
+    # # アソシエーション
+    # belongs_to :post
+
   #クラスmethod
   def self.search(search)
     if search

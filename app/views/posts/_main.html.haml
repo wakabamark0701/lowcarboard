@@ -2,7 +2,7 @@
   .Main-header
     .Main-header__title
       LowcBoard
-      (ロカボード)
+      　〜　ﾛｶﾎﾞｰﾄﾞ　〜
     .Main-header__menu
       .Main-header__fooddb
         %a{:href => "/foods"} 食品DB参照
@@ -27,27 +27,27 @@
     -@posts.each do |post|
       .Main-index-post
         .Main-index-post__daytime
-          =post.created_at
+          =post.created_at.strftime("%Y-%m-%d %H:%M:%S")
           =post.time
         .Main-index-post__foodcarb
           %ul.Main-index-post__food  
-            %li= "食品名：#{post.foodname1}"
-            %li= "食品名：#{post.foodname2}"
-            %li= "食品名：#{post.foodname3}"
-            %li= "食品名：#{post.foodname4}"
-            %li= "食品名：#{post.foodname5}"
+            %li= "食品名 ： #{post.foodname1}"
+            %li= "食品名 ： #{post.foodname2}"
+            %li= "食品名 ： #{post.foodname3}"
+            %li= "食品名 ： #{post.foodname4}"
+            %li= "食品名 ： #{post.foodname5}"
           %ul.Main-index-post__carb  
-            %li= "#{post.carb1}g" 
-            %li= "#{post.carb2}g"  
-            %li= "#{post.carb3}g" 
-            %li= "#{post.carb4}g" 
-            %li= "#{post.carb5}g" 
+            %li= "#{post.carb1} g" 
+            %li= "#{post.carb2} g"  
+            %li= "#{post.carb3} g" 
+            %li= "#{post.carb4} g" 
+            %li= "#{post.carb5} g" 
           .Main-index-post__totalcarb 
-            = "糖質合計#{post.total}g" 
+            = "糖質合計 : #{post.total} g" 
         .Main-index-post__name
           %h6= "投稿者：#{post.user.name}"   
         .Main-index-post__memo 
-          = "MEMO:#{post.memo}"     
+          = "MEMO : #{post.memo}"     
               
           
           

@@ -1,6 +1,7 @@
 // 全体//////////////////////////////////////////////
 * {
   box-sizing: border-box;
+  font-family: fantasy;
 }
 
 .wrapper {
@@ -35,21 +36,85 @@
   width:100vw;
   background-color: burlywood;
   height: 100vh;
+
 }
 
 .Main-header{
   height: 100px;
-  background-color: whitesmoke;
+  // background-color: whitesmoke;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
+  background-image: url("haikei3.jpg");
+  border-bottom:groove 10px ;
+  text-decoration: none;
+
+  
   &__title{
-    font-size: 50px;
+    font-size: 40px;
     font-style: oblique;
   }
-  &__menu{
+
+  &__fooddb{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-left: solid 6px #ff7c5c;/*左線*/
+    color: #ff7c5c;/*文字色*/
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29); 
+
+  }
+
+  &__menulogout{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-left: solid 6px #ff7c5c;/*左線*/
+    color: #ff7c5c;/*文字色*/
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29); 
     
+  }
+  &__menupost{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-left: solid 6px #ff7c5c;/*左線*/
+    color: #ff7c5c;/*文字色*/
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29); 
+
+  }
+
+  &__menulogin{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-left: solid 6px #ff7c5c;/*左線*/
+    color: #ff7c5c;/*文字色*/
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29); 
+    
+  }
+  &__menusignup{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-left: solid 6px #ff7c5c;/*左線*/
+    color: #ff7c5c;/*文字色*/
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29); 
+    
+  }
+  a{
+    text-decoration: none;
   }
 
 
@@ -58,14 +123,20 @@
 .Main-index{
   height: calc(100% - 100px);
   background-color: silver;  
+  overflow: scroll;
+  background-image: url("haikei1.jpg");
+  
 }
 
 .Main-index-post{
   height: 300px;
-  width: 95%;
+  width: 80%;
   background-color: skyblue;
-  margin: 20px;
-  padding: 10px;
+  margin: 10px 0px 10px 100px;
+  padding: 10px 20px;
+  background-image: url("haikei2.jpg");
+  border:ridge 10px ;
+
 
   
   &__daytime{
@@ -76,19 +147,30 @@
     justify-content: space-between;
     align-items: flex-end;
     height:60%;
+    font-size: 15px;
+    border-bottom:double;
+    
 
   }
   &__food{
+    margin-left: 20px;
 
   }
   &__carb{
-
+    font-size: 17px;
+    margin-right: 30px;
   }
   &__totalcarb{
     font-size: 30px;
   }
   &__name{
-    font-size: 50px;
+    font-size: 25px;
+
+  }
+  &__memo{
+    font-size: 15px;
+    margin-left:20px;
+    border-bottom: double;;
 
   }
 }

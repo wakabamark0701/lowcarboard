@@ -1,5 +1,4 @@
 class FoodsController < ApplicationController
-  before_action :move_to_index, except: [:index,:search]
 
   def index
     @foods = Food.order :name
@@ -11,13 +10,21 @@ class FoodsController < ApplicationController
 
   def create
     Food.create(food_params)
-    redirect_to "/foods"  # コメントと結びつくツイートの詳細画面に遷移する
-
+    redirect_to "/foods"
   end
 
   def search
     @foods = Food.search(params[:keyword])
   end
+
+  # def insearch
+  #   return nil if params[:keyword] == ""
+  #   @foods = Food.where(['name LIKE ?', "%#{params[:keyword]}%"] ).limit(10)
+  #   respond_to do |format|
+  #     format.html
+  #     format.json
+  #   end   
+  # end
 
 
 

@@ -3,6 +3,7 @@
     = form_with(model: @post, local: true) do |form|
       %h3 投稿する
       .contents-input
+      
         .contents-input__foods
           = form.text_field :foodname1, placeholder: "食物入力"
           = form.text_field :foodname2, placeholder: "食物入力"
@@ -41,7 +42,7 @@
 
         
       .contents-memo
-        = form.text_area :memo, placeholder: "memo", :size => "70x10" 
+        = form.text_area :memo, placeholder: "memo", :size => "50x2" 
 
       .contents-send
         = form.submit "SEND"
