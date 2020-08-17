@@ -20,6 +20,10 @@ URL:https://radiant-spire-98515.herokuapp.com/
 糖質制限ダイエットをサポートする為に作成しました。  
 
 # DEMO画面
+<img width="724" alt="トップページ" src="https://user-images.githubusercontent.com/67129169/90390271-075e7a00-e0c6-11ea-829f-e13f2155f848.png">
+<img width="724" alt="食品DB画面" src="https://user-images.githubusercontent.com/67129169/90390290-0decf180-e0c6-11ea-8b12-869cd4b55b39.png">
+<img width="724" alt="投稿画面" src="https://user-images.githubusercontent.com/67129169/90390297-104f4b80-e0c6-11ea-8733-18beed3d034a.png">
+
 
 # 工夫したポイント
 ・食品DBに登録した食品については探しやすいように食品検索機能を実装。  
