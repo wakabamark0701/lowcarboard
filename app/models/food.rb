@@ -2,7 +2,7 @@ class Food < ApplicationRecord
   validates :name, presence: true
 
     # # アソシエーション
-    # belongs_to :post
+    belongs_to :post
 
   #クラスmethod
   def self.search(search)
