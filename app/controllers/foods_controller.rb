@@ -16,7 +16,7 @@ class FoodsController < ApplicationController
   def search
     @foods = Food.search(params[:keyword])
   end
-
+ 
   # def insearch
   #   return nil if params[:keyword] == ""
   #   @foods = Food.where(['name LIKE ?', "%#{params[:keyword]}%"] ).limit(10)
