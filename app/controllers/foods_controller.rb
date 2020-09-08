@@ -6,6 +6,11 @@ class FoodsController < ApplicationController
 
   def new
     @food = Food.new
+    return nil if params[:keyword] == ""
+    @foods = Food.where(['name LIKE ?', "%#{params[:keyword]}%"] ).limit(10)
+    respond_to do |format|
+      format.html
+      format.json
   end
 
   def create
@@ -17,17 +22,6 @@ class FoodsController < ApplicationController
     @foods = Food.search(params[:keyword])
   end
  
-  # def insearch
-  #   return nil if params[:keyword] == ""
-  #   @foods = Food.where(['name LIKE ?', "%#{params[:keyword]}%"] ).limit(10)
-  #   respond_to do |format|
-  #     format.html
-  #     format.json
-  #   end   
-  # end
-
-
-
   private
   def food_params
     params.permit(:name, :carb)
