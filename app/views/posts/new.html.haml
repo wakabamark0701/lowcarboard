@@ -2,14 +2,16 @@
   .container
     = form_with(model: @post, local: true) do |form|
       %h3 投稿する
+      = form.text_field :foodname1, placeholder: "食物入力"
       .contents-input
       
+      
         .contents-input__foods
-          = form.text_field :foodname1, placeholder: "食物入力"
-          = form.text_field :foodname2, placeholder: "食物入力"
-          = form.text_field :foodname3, placeholder: "食物入力"
-          = form.text_field :foodname4, placeholder: "食物入力"
-          = form.text_field :foodname5, placeholder: "食物入力"
+          
+          -# = form.text_field :foodname2, placeholder: "食物入力"
+          -# = form.text_field :foodname3, placeholder: "食物入力"
+          -# = form.text_field :foodname4, placeholder: "食物入力"
+          -# = form.text_field :foodname5, placeholder: "食物入力"
         .contents-input__carbs
           = form.text_field :carb1, placeholder: "糖質g "
           = form.text_field :carb2, placeholder: "糖質g "
